@@ -5,13 +5,14 @@ import { AboutPageAsync } from "./pages/AboutPage/AboutPageAsync";
 import { Link } from "react-router-dom";
 import { Suspense } from "react";
 import { useTheme } from "./theme/useTheme";
+import { classNames } from "./helpers/classNames/classNames";
 
 export default function App() {
 
   const {theme, toggleTheme} = useTheme();
   
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames('app', { }, [ ])}>
       <button onClick={toggleTheme}>TOGGLE</button>
       <Link to={"/"}>Home page</Link>
       <Link to={"/about"}>About page</Link>
