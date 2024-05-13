@@ -2,7 +2,6 @@ import "./styles/index.scss";
 import { Route, Routes } from "react-router-dom";
 import { Suspense } from "react";
 import { Link } from "react-router-dom";
-
 import { classNames } from "shared/lib/classNames/classNames";
 import { useTheme } from "app/providers/ThemeProvider";
 import { MainPage } from "pages/MainPage";
